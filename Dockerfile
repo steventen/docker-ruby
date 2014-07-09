@@ -12,6 +12,7 @@ RUN apt-get -y update
 RUN apt-get -y install build-essential zlib1g-dev libssl-dev libyaml-dev libpcre3-dev libcurl4-openssl-dev libreadline-dev libxml2-dev
 RUN apt-get -y install python-software-properties software-properties-common
 RUN apt-get -y install curl git-core
+RUN apt-get -y install libmysqlclient-dev ruby-mysql
 
 # Install nodejs
 RUN add-apt-repository -y ppa:chris-lea/node.js
